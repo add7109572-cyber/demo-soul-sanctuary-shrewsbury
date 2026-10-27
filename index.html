@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soul Sanctuary — Shrewsbury | Redesign Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;box-sizing:border-box}body{font-family:Georgia,serif;background:#faf5ef;color:#33231c;line-height:1.6;overflow-x:hidden}
+.banner{background:#a85b38;color:#fff;text-align:center;padding:12px 16px;font-size:14px;font-weight:600;position:sticky;top:0;z-index:50}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 5vw}nav b{font-family:'Cormorant Garamond',serif;font-size:22px}nav a{color:#a85b38;text-decoration:none;font-weight:700}
+.hero{position:relative;overflow:hidden;color:#fff;text-align:center;padding:120px 5vw;background:#2b1d16} .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,6vw,64px);line-height:1.05;animation:fadeUp 1s ease both}
+.hero p{max-width:560px;margin:16px auto;font-size:18px;animation:fadeUp 1s .2s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.12)}}
+.heroimg{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;animation:kenburns 18s ease-in-out infinite alternate}
+.heroinner{position:relative;z-index:2}
+.btn{display:inline-block;background:#a85b38;color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:700;margin-top:18px;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(0,0,0,.2)}
+section{padding:56px 5vw;max-width:1100px;margin:0 auto}h2{font-family:'Cormorant Garamond',serif;font-size:32px;margin-bottom:8px}h2+p{color:#555;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border-radius:4px;padding:24px;box-shadow:0 4px 18px rgba(0,0,0,.07);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 30px rgba(0,0,0,.14)}
+.card h3{font-family:'Cormorant Garamond',serif;margin-bottom:6px}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.gal img{width:100%;height:200px;object-fit:cover;border-radius:4px}
+.reveal{opacity:0;transform:translateY(20px);transition:all .7s ease}.reveal.vis{opacity:1;transform:none}
+.strip{border:2px solid #a85b38;border-radius:4px;padding:28px;text-align:center;font-size:19px;background:#fff}
+footer{background:#111;color:#ddd;text-align:center;padding:32px 16px;font-size:14px}footer a{color:#fff}
+.marquee{overflow:hidden;white-space:nowrap;background:#a85b38;color:#fff;padding:10px 0}
+.marquee span{display:inline-block;padding-left:100%;animation:scroll 22s linear infinite}
+@keyframes scroll{to{transform:translateX(-100%)}}
+</style></head><body>
+<div class="banner">Demo concept only — a redesign preview of Soul Sanctuary's website, not their full official site.</div>
+<nav><b>Soul Sanctuary</b><a href="tel:+441743588181">Call to book</a></nav>
+<header class="hero"><img class="heroimg" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80" alt=""><div class="heroinner"><h1>Hair, wellbeing & soul — in one sanctuary.</h1><p>Blonde and balayage specialists, head spa rituals, massage and Reiki — founded by three women in Shrewsbury.</p><a class="btn" href="tel:+441743588181">Call to book</a></div></header>
+<div class="marquee"><span>Balayage ✦ Head spa £56 ✦ Full-body massage £66 ✦ Reiki £46 ✦ Gel manicure £36 ✦ </span></div>
+<section><h2>Services</h2><p>Real prices, shown up front — the way a sanctuary should be.</p><div class="grid"><div class="card reveal"><h3>Hair Cuts £50–£60</h3><p>Precision cuts that grow out beautifully.</p></div><div class="card reveal"><h3>Colour £50–£90 · Highlights £80–£150</h3><p>Blonde and balayage specialism, tailored to you.</p></div><div class="card reveal"><h3>Head Spa £56</h3><p>A deeply relaxing scalp ritual.</p></div><div class="card reveal"><h3>Massage £66 · Reiki £46</h3><p>Full-body massage and energy work for body and mind.</p></div><div class="card reveal"><h3>Gel Manicure £36 · Pedicure £36</h3><p>Beautiful, lasting nails in a calm space.</p></div></div></section>
+<section><div class="strip">Workshops and retreats, plus OWN IT haircare to keep the feeling going at home.</div></section>
+<section><h2>Gallery</h2><p>A look inside the salon experience.</p><div class="gal"><img class="reveal" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1200&q=80" alt="Salon photo" loading="lazy"><img class="reveal" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80" alt="Salon photo" loading="lazy"><img class="reveal" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&q=80" alt="Salon photo" loading="lazy"><img class="reveal" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80" alt="Salon photo" loading="lazy"></div></section>
+<section><h2>Visit us</h2><p>101 Frankwell, Shrewsbury SY3 8JS · 01743 588181 · hello@soulsanctuaryshrewsbury.com · Please call or email for opening hours.</p><a class="btn" href="tel:+441743588181">Call to book</a></section>
+<footer><p>Demo concept only — a redesign preview of Soul Sanctuary's website, not their full official site.</p><p>Photos are illustrative stock photos. This demo does not take bookings — please use the salon's real booking route above.</p><p><a href="https://www.soulsanctuaryshrewsbury.com/">Visit the salon's real website</a></p></footer>
+<script>const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');o.unobserve(x.target)}}),{threshold:.15});document.querySelectorAll('.reveal').forEach(el=>o.observe(el));</script>
+</body></html>
